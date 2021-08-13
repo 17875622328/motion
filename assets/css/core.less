@@ -1,0 +1,230 @@
+// banner
+.banner{
+    background: #191919;
+    .container-fluid{
+        padding: 0;
+        .thumb{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// core 
+.core{
+    padding: 5em 0em;
+    background: #191919;
+    .container{
+        .title{
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            color: #e62e29;
+        }
+        .line{
+            display: block;
+            width: 5%;
+            height: .8em;
+            background:#e62e29;
+            margin: 0 auto;
+            margin-bottom: 5em;
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .list{
+                width: 30%;
+                margin-bottom: 2em;
+                .item{
+                    position: relative;
+                    height: 16em;
+                    background: #fff;
+                    .thumb{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .theme{
+                        position: absolute;
+                        top: -13px;
+                        right: -20px;
+                        background: #e62e29;
+                        color: #fff;
+                        padding: .3em 1.5em;
+                    }
+                }
+                .info{
+                    background: #fff;
+                    padding: 1em;
+                    .test{
+                        color: #000;
+                        font-weight: bold;
+                        padding-bottom: 1em;
+                    }
+                    .data{
+                        a{
+                            color: #e62e29;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 13em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:995px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 10em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:750px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        width: 45%;
+                        .item{
+                            height: 14.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:650px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 12.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 10.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        &{
+            .container{
+                .line{
+                    width: 10%;
+                }
+                .box{
+                    .list{
+                        .item{
+                            height: 9.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:470px) {
+        &{
+            .container{
+                .box{
+                    justify-content: center;
+                    .list{
+                        width: 90%;
+                        .item{
+                            height: 16em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 14em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 12.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:300px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 10.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+
+}

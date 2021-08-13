@@ -1,0 +1,183 @@
+// header
+.header{
+    background: #000;
+    padding: 1em 0em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    
+    .navbar{
+        margin: 0;
+        background: #000;
+        border: 0;
+        .container{
+            padding: 0em 2em;
+            
+            .collapse{
+                .nav{
+                    text-align: center;
+                    li{
+                        a{
+                            color: #fff;
+                            font-weight: bold;
+                            border-bottom:3px solid transparent;
+                            transition: all linear .5s;
+                            &:hover{
+                                border-bottom: 3px solid #e62e29;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:330px) {
+        &{
+            .navbar{
+                .container{
+                    .navbar-header{
+                        .logo{
+                            transform: scale(.5);
+                            margin-left: -80px;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+}
+
+//footer
+.footer{
+    padding: 5em 0em;
+    background: #000;
+    .container{
+        .box{
+            display: flex;
+            justify-content: space-between;
+            .left{
+                width: 38%;
+                .thumb{
+                    margin-bottom: 3em;
+                }
+                .test{
+                    span{
+                        color: #fff;
+                        display: block;
+                        padding-bottom: 1em;
+                    }
+                }
+                .copyright{
+                    color: #fff;
+                    padding-top: 3em;
+                }
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                width: 58%;
+                .list{
+                    width: 22%;
+                    li{
+                        text-align: center;
+                        height: 4em;
+                        line-height: 4em;
+                        transition: all linear .3s;
+                        border-bottom: 3px solid transparent;
+                        cursor: pointer;
+                        &:hover{
+                            border-bottom: 3px solid #e62e29;
+                        }
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        &{
+            .container{
+                .box{
+                    flex-wrap: wrap;
+                    .left{
+                        width: 100%;
+                        text-align: center;
+                        padding-bottom: 3em;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:330px) {
+        &{
+            .container{
+                .box{
+                    .right{
+                        flex-wrap: wrap;
+                        .list{
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 返回顶部
+#gotop {
+    position: fixed;
+    bottom: 90px;
+    right: 0%;
+    width: 80px;
+    cursor: pointer;
+    z-index: -99998;
+    opacity: 0;
+
+    transition: all linear .4s;
+
+    &:hover {
+        animation: rubberBand 1s;
+    }
+
+    @keyframes rubberBand {
+        from {
+          transform: scale3d(1, 1, 1);
+        }
+      
+        30% {
+          transform: scale3d(1.25, 0.75, 1);
+        }
+      
+        40% {
+          transform: scale3d(0.75, 1.25, 1);
+        }
+      
+        50% {
+          transform: scale3d(1.15, 0.85, 1);
+        }
+      
+        65% {
+          transform: scale3d(.95, 1.05, 1);
+        }
+      
+        75% {
+          transform: scale3d(1.05, .95, 1);
+        }
+      
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+      }
+}

@@ -1,0 +1,248 @@
+// curriculum
+.curriculum{
+    padding: 5em 0em;
+    background: #191919;
+    .container{
+        .title{
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            color: #e62e29;
+        }
+        .line{
+            display: block;
+            width: 5%;
+            height: .8em;
+            background: #e62e29;
+            margin: 0 auto;
+            margin-bottom: 3em;
+        }
+        .box{
+            .list{
+                display: flex;
+                justify-content: space-between;
+                color: #fff;
+                background: #2f2e2e;
+                margin-bottom: 2em;
+                height: 18em;
+                padding: 2em;
+                .item{
+                    width: 30%;
+                    position: relative;
+                    .thumb{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .theme{
+                        position: absolute;
+                        top: -15px;
+                        left: 20px;
+                        font-weight: bold;
+                        padding: .5em 2em;
+                        background: #e62e29;
+                        transform-origin: 0 0;
+                        transform: rotate(90deg);
+                    }
+
+                }
+                .info{
+                    width: 66%;
+                    .content{
+                        padding: 1em 0em;
+                    }
+                    .lines{
+                        display: block;
+                        width: 5%;
+                        height: 2px;
+                        background: #e62e29;
+                    }
+                    .text{
+                        padding: 1em 0em;
+                        width: 92%;
+                        
+                    }
+                    .btns{
+                        background: #e62e29;
+                        padding: .4em 1.5em;
+                        transition: all linear .3s;
+                        &:hover{
+                            transform: translateY(-10px);
+                            box-shadow: 0px 10px 7px #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:995px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        height: 40em;
+                        .item{
+                            width: 52%;
+                            height: 20em;
+                            text-align: center;
+                        }
+                        .info{
+                            width: 60%;
+                            text-align: center;
+                            .lines{
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:990px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            width: 68%;
+                            height: 20em;
+                        }
+                        .info{
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:650px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        height: 37em;
+                        .item{
+                            width: 68%;
+                            height: 17em;
+                        }
+                        .info{
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:580px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        height: 36em;
+                        .item{
+                            height: 15em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        &{
+            .container{
+                .line{
+                    width: 10%;
+                }
+                .box{
+                    .list{
+                        .item{
+                            height: 12em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:470px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        height: 36em;
+                        .item{
+                            width: 100%;
+                            height: 15em;
+                            .theme{
+                                padding: 0.4em .8em;
+                            }
+                        }
+                        .info{
+                            width: 100%;
+                            .lines{
+                                width: 15%;
+                            }
+                            .text{
+                                font-size: .8em;
+                                width: 100%;
+                                padding: 2em 0em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 14em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:350px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        .item{
+                            height: 11em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:300px) {
+        &{
+            .container{
+                .box{
+                    .list{
+                        height: 31em;
+                        .item{
+                            height: 9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
